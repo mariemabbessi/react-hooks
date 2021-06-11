@@ -1,4 +1,3 @@
-import "./App.css";
 import MovieList from "./components/moviesList/MovieList";
 import { myMovies } from "./Data/Data";
 import "bootstrap/dist/css/bootstrap.min.css";
