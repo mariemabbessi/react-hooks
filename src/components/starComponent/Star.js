@@ -45,6 +45,8 @@ function Star({ rating, setStarSearch }) {
 Star.defaultProps = {
   setStarSearch: () => {},
 };
+
 export default Star;
+
 {
 }

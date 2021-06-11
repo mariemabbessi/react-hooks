@@ -6,6 +6,7 @@ function MovieList(props) {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [image, setImage] = useState("");
+  const [trailer, setTrailer] = useState("");
   const [rating, setRating] = useState(null);
   const [description, setDescription] = useState("");
   const [show, setShow] = useState(false);
@@ -20,6 +21,7 @@ function MovieList(props) {
         name,
         date,
         image,
+        trailer,
         rating,
         description,
       },
@@ -27,6 +29,7 @@ function MovieList(props) {
     setName("");
     setDate("");
     setImage("");
+    setTrailer("");
     setRating(null);
     setDescription("");
     handleClose();
@@ -75,6 +78,14 @@ function MovieList(props) {
                   type="text"
                   placeholder="Enter the movie image link"
                   onChange={(event) => setImage(event.target.value)}
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Trailer link</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter the movie trailer link"
+                  onChange={(event) => setTrailer(event.target.value)}
                 />
               </Form.Group>
 
